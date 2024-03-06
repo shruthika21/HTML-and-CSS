@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        .photo-collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+            gap: 5px;
+            padding: 10px;
+            flex: 1;
+        }
+
+        .photo-collage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid #FF69B4; /* Pink border for flowers */
+            box-shadow: 2px 2px 4px #888;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo-collage img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Flower Gallery</h1>
+    </header>
+
+    <div class="photo-collage">
+        <img src="C:\Users\shrut\Downloads\rose.jpg" alt="Rose">
+        <img src="C:\Users\shrut\Downloads\tulip.jpg" alt="Tulip">
+        <img src="C:\Users\shrut\Downloads\lily.jpg" alt="Lily">
+        <img src="C:\Users\shrut\Downloads\daisy.jpg" alt="Daisy">
+    </div>
+
+    <footer>
+        <p>&copy; Flower gallery layout made by SHRUTHI</p>
+    </footer>
+
+</body>
+
+</html>
